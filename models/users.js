@@ -7,7 +7,7 @@ const userSchema = mongoose.Schema({
   instagram: { type: String },
   twitter: { type: String },
   github: { type: String },
+  
 });
-
 
 module.exports = mongoose.model("Users", userSchema);
