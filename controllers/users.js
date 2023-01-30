@@ -7,10 +7,10 @@ exports.createUser = (req, res, next) => {
         const user = new User({
           firstName: req.body.firstName,
           lastName: req.body.lastName,
-          imageUrl: req.body.imageUrl,
           instagram: req.body.instagram,
           twitter: req.body.twitter,
           github: req.body.github,
+          imageUrl: req.body.imageUrl,
         });
         user
           .save()
